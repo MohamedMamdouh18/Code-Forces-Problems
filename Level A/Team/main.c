@@ -28,3 +28,21 @@ int main()
     }
     printf("%i" , sol) ;
 }
+
+
+
+/*another smaller solution:
+int main()
+{
+    int n ,x , y , z , sol ;
+    scanf("%i" , &n);
+    for(int i = 0 ; i < n ; i ++)
+    {
+        scanf("%i %i %i" , &x , &y , &z);
+        if(x + y + z >= 2)
+        {
+            sol++ ;
+        }
+    }
+    printf("%i" , sol) ;
+}*/
