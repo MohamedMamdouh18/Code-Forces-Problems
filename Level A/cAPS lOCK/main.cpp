@@ -1,10 +1,8 @@
 
 #include <bits/stdc++.h>
 using namespace std ;
-
 #define IOS ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0);
 #define rep(i , a, b)    for(int i = a; i < b; i++)
-
 
 int main() {
     IOS
@@ -12,6 +10,7 @@ int main() {
     cin >> s ;
     if(s.size() == 1)
     {
+
         if(islower(s[0]))
         {
             s[0] = toupper(s[0]) ;
@@ -23,7 +22,7 @@ int main() {
         cout << s ;
         return 0 ;
     }
-    if(islower(s[0]) && isupper(s[1]))
+    if(islower(s[0]))
     {
         rep(i , 1 , s.size())
         {
@@ -39,9 +38,9 @@ int main() {
             s[i] = tolower(s[i]) ;
         }
     }
-    else if(isupper(s[0]) && isupper(s[1]))
+    else
     {
-        rep(i , 1 , s.size())
+        rep(i , 0 , s.size())
         {
             if(islower(s[i]))
             {
